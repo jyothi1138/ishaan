@@ -1,7 +1,8 @@
 import os
+from flask import Flask, render_template, request, flash, redirect, url_for, send_from_directory
 from PIL import Image
 from werkzeug.utils import secure_filename
-from flask import Flask, render_template, request, flash, redirect, url_for, send_from_directory
+
 
 UPLOAD_FOLDER = '\\upload\\'
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
