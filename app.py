@@ -1,6 +1,4 @@
 import os
-
-import img2pdf
 from PIL import Image
 from werkzeug.utils import secure_filename
 from flask import Flask, render_template, request, flash, redirect, url_for, send_from_directory
